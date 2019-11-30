@@ -14,7 +14,6 @@
     "handlebars-helpers": "^0.10.0",
     "jsoneditor": "^5.9.6",
     "lodash": "^4.17.15",
-    "nodemon": "^1.18.7",
     "tablesort": "^5.0.1"
   },
   "scripts": {
@@ -25,5 +24,8 @@
     "node": ">=7.6.0"
   },
   "repository": "https://github.com/bee-queue/arena.git",
-  "version": "2.6.4"
+  "version": "2.6.4",
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
 }
