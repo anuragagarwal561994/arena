@@ -38,6 +38,7 @@ class BullJob extends Job {
       delay,
       progress
     } = this._job.toJSON();
+    const {logs} = await this._job.queue.getJobLogs(id);
     return new JobData({
       id,
       name,
@@ -49,6 +50,7 @@ class BullJob extends Job {
       delay,
       progress,
       returnValue,
+      logs,
     });
   }
 }
