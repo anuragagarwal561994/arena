@@ -25,15 +25,15 @@
       {{moment this.options.timestamp "llll"}}
     {{/if}}
   </div>
-  
+
+  {{#if this.options.delay}}
   <div class="col-sm-3">
-    {{#if this.options.delay}}
     <h5>Execute at</h5>
     {{#if this.options.timestamp}}
     {{moment (plus this.options.timestamp this.options.delay) "llll"}}
     {{/if}}
-    {{/if}}
   </div>
+  {{/if}}
 
   <div class="col-sm-3">
     <h5>Attempts Made</h5>
